@@ -1,43 +1,55 @@
 <?php include 'includes/header.php'; ?>
 
-<div class="contenedor-login">
-    <div class="caja-login caja-cliente">
-        <h2>Crear Nueva Cuenta</h2>
-        <p>Regístrate para realizar tus compras</p>
-        
-        <!-- Apunta al script que procesará el nuevo usuario en la base de datos -->
-        <form action="backend/procesar_registro.php" method="POST">
+<!-- El contenedor usa Flexbox para centrar la tarjeta vertical y horizontalmente -->
+<div class="contenedor-principal fondo-blanco" style="display: flex; justify-content: center; align-items: center; min-height: 75vh; padding: 40px 20px;">
+    
+    <div class="tarjeta-formulario">
+        <h2 class="titulo-formulario">Crear Cuenta</h2>
+        <p class="subtitulo-formulario">Únete a Refacciones TextilNet</p>
+
+        <!-- Formulario listo para que tu compañera lo conecte a la base de datos -->
+        <form action="#" method="POST">
             
             <div class="grupo-input">
-                <label for="nombres">Nombres</label>
-                <input type="text" id="nombres" name="nombres" required placeholder="">
-            </div>
-            <div class="grupo-input">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos" required placeholder=""> 
+                <label for="nombre">Nombre Completo</label>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
             </div>
 
             <div class="grupo-input">
-                <label for="correo_registro">Correo Electrónico</label>
-                <input type="email" id="correo_registro" name="correo_registro" required placeholder="">
+                <label for="correo">Correo Electrónico</label>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
             </div>
-            
+
             <div class="grupo-input">
-                <label for="password_registro">Contraseña</label>
-                <input type="password" id="password_registro" name="password_registro" required placeholder="Crea una contraseña segura">
+                <label for="password">Contraseña</label>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                </div>
             </div>
+
             <div class="grupo-input">
-                <label for="password_registro">Confirma Contraseña</label>
-                <input type="password" id="password_registro" name="password_registro" required placeholder="">
+                <label for="confirmar_password">Confirmar Contraseña</label>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confirmar_password" name="confirmar_password" placeholder="********" required>
+                </div>
             </div>
-            <button type="submit" class="btn-login">Registrarme</button>
-            
-            <div class="enlaces-extra">
-                <p>¿Ya tienes cuenta? <a href="login_cliente.php" class="link-destacado">Inicia sesión aquí</a></p>
-            </div>
-            
+
+            <button type="submit" class="btn-formulario">Registrarse</button>
         </form>
+
+        <div class="pie-formulario">
+            ¿Ya tienes una cuenta? <a href="login_cliente.php">Inicia sesión aquí</a>
+        </div>
     </div>
+
 </div>
 
 </body>

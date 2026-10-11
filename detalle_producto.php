@@ -1,45 +1,53 @@
 <?php include 'includes/header.php'; ?>
 
-<div class="contenedor-principal">
+<div class="contenedor-principal fondo-blanco">
     
-  
-    <aside class="sidebar-categorias">
-        <h3>Categorías</h3>
-        <ul>
-            <li><a href="index.php">Volver al Catálogo</a></li>
-            <li class="activo"><a href="#">League Parts</a></li>
-        </ul>
-    </aside>
+    <!-- Botón para regresar al catálogo -->
+    <a href="index.php" class="btn-regresar">
+        <i class="fa-solid fa-arrow-left"></i> Volver al Catálogo
+    </a>
 
-    
-    <main class="area-detalle">
-        <div class="caja-detalle-producto">
+    <!-- Contenedor dividido en dos columnas -->
+    <div class="detalle-producto-container">
+        
+        <!-- Columna Izquierda: Imagen Grande -->
+        <div class="detalle-imagen-caja">
+            <!-- Usamos la misma imagen de tu cangrejo -->
+            <img src="assets/img/cangrejo-hirose.jpg" alt="Cangrejo para Recta Industrial" class="img-detalle">
+        </div>
+
+        <!-- Columna Derecha: Información y Compra -->
+        <div class="detalle-info-caja">
+            <span class="etiqueta-marca">Hirose Hooks</span>
+            <h2 class="titulo-detalle">Cangrejo para Recta Industrial</h2>
+            <p class="sku-detalle">Número de Repuesto (Ref): <strong>329 H</strong></p>
             
-            <!-- Columna Izquierda: Imagen -->
-            <div class="detalle-imagen">
-                <img src="assets/img/cangrejo-hirose.jpg" alt="Cangrejo Hirose">
+            <h3 class="precio-detalle">$20.00 MXN</h3>
+            
+            <div class="descripcion-producto">
+                <p>Cangrejo original de alta velocidad y precisión. Ideal para máquinas rectas industriales estándar que trabajan en jornadas largas. Evita el salto de puntada y el desgaste prematuro del hilo.</p>
+                <ul>
+                    <li><strong>Material:</strong> Acero endurecido de alta calidad</li>
+                    <li><strong>Tipo de máquina:</strong> Recta Industrial (Brother, Juki, Siruba)</li>
+                    <li><strong>Garantía:</strong> 6 meses contra defectos de fábrica</li>
+                </ul>
             </div>
 
-            <!-- Columna Derecha: Información y descripción -->
-            <div class="detalle-info">
-                <h2>Cangrejo Para Máquina De Coser Recta Industrial</h2>
-                <hr>
-                <div class="especificaciones">
-                    <p><strong>Descripción:</strong></p>
-                    <p>Cangrejo Hirose Hooks original (japonés), para máquinas de coser industriales rectas Brother, Futura, etc.</p>
-                    <ul>
-                        <li>Para trabajo ligero - mediano.</li>
-                    </ul>
-                    <p><strong>Modelo:</strong> 329 H</p>
-                    <p><strong>Marca:</strong> HIROSE HOOKS</p>
+            <form action="carrito.php" method="GET" class="caja-comprar">
+                <div class="selector-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <!-- El atributo "name='cantidad'" es el que transporta el dato -->
+                    <input type="number" id="cantidad" name="cantidad" value="1" min="1" class="input-cantidad">
                 </div>
                 
-                <h3 class="precio-detalle">$20.00 MXN</h3>
-                <button class="btn-agregar">Agregar al Carrito</button>
-            </div>
-
+                <button type="submit" class="btn-agregar-carrito">
+                    <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
+                </button>
+            </form>
+            
         </div>
-    </main>
+    </div>
+
 </div>
 
 </body>

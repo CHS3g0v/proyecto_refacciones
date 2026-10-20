@@ -2,7 +2,7 @@
 
 <div class="contenedor-principal" style="display: flex; gap: 30px; padding: 30px 20px;">
     
-    <!-- BARRA LATERAL (Menú del Admin) -->
+    <!--(Menú del Admin) -->
     <aside style="width: 250px; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: fit-content; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
         <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">
             <i class="fa-solid fa-screwdriver-wrench"></i> Administración
@@ -18,18 +18,17 @@
                 <a href="#" style="text-decoration: none; color: #666;"><i class="fa-solid fa-chart-line"></i> Reporte de Ventas</a>
             </li>
             <li style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
-                <!-- Botón para cerrar sesión y regresar al inicio -->
                 <a href="index.php" style="text-decoration: none; color: #dc3545; font-weight: bold;"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
             </li>
         </ul>
     </aside>
 
-    <!-- ÁREA PRINCIPAL (Formulario para subir productos) -->
+
     <main style="flex: 1; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
         <h2 style="margin-top: 0; color: #0033a0;">Agregar Nuevo Repuesto</h2>
         <p style="color: #666; margin-bottom: 25px;">Llena los datos para publicar un nuevo producto en el catálogo.</p>
 
-        <!-- El atributo enctype es VITAL para que PHP pueda recibir la imagen -->
+
         <form action="#" method="POST" enctype="multipart/form-data" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             
             <div style="display: flex; flex-direction: column; gap: 8px;">

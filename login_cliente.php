@@ -1,13 +1,13 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Usamos Flexbox directamente aquí para centrar la tarjeta en la pantalla -->
+
 <div class="contenedor-principal fondo-blanco" style="display: flex; justify-content: center; align-items: center; min-height: 65vh; padding: 40px 20px;">
     
     <div class="tarjeta-formulario">
         <h2 class="titulo-formulario">Iniciar Sesión</h2>
         <p class="subtitulo-formulario">Bienvenido de vuelta a Refacciones TextilNet</p>
 
-        <!-- El action="#" está vacío por ahora, tu compañera lo conectará a PHP después -->
+   
         <form action="#" method="POST">
             
             <div class="grupo-input">

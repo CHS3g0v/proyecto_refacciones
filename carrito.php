@@ -1,7 +1,7 @@
 <?php 
 include 'includes/header.php'; 
 
-// Atrapamos la cantidad exacta que viene de la pantalla del producto
+
 $cantidad_inicial = isset($_GET['cantidad']) ? (int)$_GET['cantidad'] : 1;
 ?>
 
@@ -23,7 +23,7 @@ $cantidad_inicial = isset($_GET['cantidad']) ? (int)$_GET['cantidad'] : 1;
             </thead>
             <tbody id="cuerpo-carrito">
                 
-                <!-- ESTA ES LA CLASE CRÍTICA: fila-producto y data-precio -->
+                <!-- fila-producto y data-precio -->
                 <tr class="fila-producto" data-precio="20.00">
                     <td style="padding: 15px 10px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 15px;">
                         <img src="assets/img/cangrejo-hirose.jpg" alt="Cangrejo Hirose" style="width: 80px; height: 80px; object-fit: contain; border: 1px solid #ddd; border-radius: 5px; background: white;">
@@ -89,7 +89,7 @@ $cantidad_inicial = isset($_GET['cantidad']) ? (int)$_GET['cantidad'] : 1;
     const cuerpoCarrito = document.getElementById('cuerpo-carrito');
 
     function calcularCarrito() {
-        // Javascript busca las filas con la clase exacta
+        
         const filas = document.querySelectorAll('.fila-producto');
         let subtotalGlobal = 0;
 

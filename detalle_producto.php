@@ -2,21 +2,20 @@
 
 <div class="contenedor-principal fondo-blanco">
     
-    <!-- Botón para regresar al catálogo -->
+
     <a href="index.php" class="btn-regresar">
         <i class="fa-solid fa-arrow-left"></i> Volver al Catálogo
     </a>
 
-    <!-- Contenedor dividido en dos columnas -->
+
     <div class="detalle-producto-container">
         
-        <!-- Columna Izquierda: Imagen Grande -->
+
         <div class="detalle-imagen-caja">
-            <!-- Usamos la misma imagen de tu cangrejo -->
             <img src="assets/img/cangrejo-hirose.jpg" alt="Cangrejo para Recta Industrial" class="img-detalle">
         </div>
 
-        <!-- Columna Derecha: Información y Compra -->
+
         <div class="detalle-info-caja">
             <span class="etiqueta-marca">Hirose Hooks</span>
             <h2 class="titulo-detalle">Cangrejo para Recta Industrial</h2>
@@ -36,7 +35,6 @@
             <form action="carrito.php" method="GET" class="caja-comprar">
                 <div class="selector-cantidad">
                     <label for="cantidad">Cantidad:</label>
-                    <!-- El atributo "name='cantidad'" es el que transporta el dato -->
                     <input type="number" id="cantidad" name="cantidad" value="1" min="1" class="input-cantidad">
                 </div>
                 
